@@ -15,3 +15,9 @@ test('rejects values that are not numbers', () => {
   assert.throws(() => formatEuro(NaN), TypeError);
   assert.throws(() => formatEuro(Infinity), TypeError);
 });
+
+test('uses European Portuguese format by default', () => {
+  assert.match(formatEuro(1250), /^1250,00\s€$/);
+  assert.match(formatEuro(0), /^0,00\s€$/);
+  assert.match(formatEuro(-3.5), /^-3,50\s€$/);
+});
