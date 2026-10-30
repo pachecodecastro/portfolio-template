@@ -27,10 +27,10 @@ On Android, open the demo in Chrome, tap the three-dot menu and choose Install a
 
 List every source with a link and the date it was last checked. If the project uses no outside data, say so.
 
-## Limitations
-
-State plainly what it does not do, what it cannot know, and where it may be wrong. Example data is fictional. This is not legal, financial or professional advice.
-
 ## License
 
 MIT
+
+## Limitations
+
+State plainly what it does not do, what it cannot know, and where it may be wrong. Example data is fictional. This is not legal, financial or professional advice.
