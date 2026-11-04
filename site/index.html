@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project name</title>
+  <meta name="description" content="One sentence about what this does.">
+  <meta name="theme-color" content="#0b3d91">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Project name</h1>
+    <p class="sub">One sentence about what this does.</p>
+  </header>
+
+  <main>
+    <section class="card" aria-labelledby="try">
+      <h2 id="try">Try it</h2>
+      <form id="demo">
+        <label for="amount">Amount in euros</label>
+        <input id="amount" type="number" inputmode="decimal" min="0" step="0.01" required>
+        <button type="submit">Format</button>
+      </form>
+      <p id="result" role="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Fill #checked with the date rules were last checked, from site/data/*.json, once the project has rules. -->
+    <p>Example data on this page is fictional. <span id="checked"></span></p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
