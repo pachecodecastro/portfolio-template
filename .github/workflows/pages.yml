@@ -16,6 +16,9 @@ concurrency:
 
 jobs:
   deploy:
+    # Skip cleanly until Pages is turned on (Settings > Pages > Source: GitHub Actions).
+    # Repositories created from this template would otherwise fail on every push.
+    if: ${{ github.event.repository.has_pages }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
